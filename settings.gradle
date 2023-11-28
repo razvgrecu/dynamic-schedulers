@@ -1,0 +1,11 @@
+pluginManagement {
+    includeBuild('build-logic')
+    repositories {
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'schedulers'
+
+include('app-api', 'app', 'app-domain', 'app-business-kooky', 'app-business-traditional')
+include('build-platform')
